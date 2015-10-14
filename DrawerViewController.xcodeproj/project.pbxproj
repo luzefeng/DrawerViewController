@@ -15,6 +15,9 @@
 		89EC02EE1BCE7F3C0029C353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EC02EC1BCE7F3C0029C353 /* LaunchScreen.storyboard */; };
 		89EC02F91BCE7F3C0029C353 /* DrawerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC02F81BCE7F3C0029C353 /* DrawerViewControllerTests.swift */; };
 		89EC03041BCE7F3C0029C353 /* DrawerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03031BCE7F3C0029C353 /* DrawerViewControllerUITests.swift */; };
+		89EC03151BCE7FA90029C353 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03141BCE7FA90029C353 /* DrawerView.swift */; settings = {ASSET_TAGS = (); }; };
+		89EC03171BCE81F70029C353 /* DrawerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03161BCE81F70029C353 /* DrawerViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		89EC03191BCE85430029C353 /* DrawerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03181BCE85430029C353 /* DrawerViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		89EC02FF1BCE7F3C0029C353 /* DrawerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EC03031BCE7F3C0029C353 /* DrawerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewControllerUITests.swift; sourceTree = "<group>"; };
 		89EC03051BCE7F3C0029C353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EC03141BCE7FA90029C353 /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		89EC03161BCE81F70029C353 /* DrawerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewCell.swift; sourceTree = "<group>"; };
+		89EC03181BCE85430029C353 /* DrawerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		89EC02DF1BCE7F3C0029C353 /* DrawerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				89EC03131BCE7FA90029C353 /* Drawer */,
 				89EC02E01BCE7F3C0029C353 /* AppDelegate.swift */,
 				89EC02E21BCE7F3C0029C353 /* ViewController.swift */,
 				89EC02E41BCE7F3C0029C353 /* Main.storyboard */,
@@ -126,6 +133,16 @@
 				89EC03051BCE7F3C0029C353 /* Info.plist */,
 			);
 			path = DrawerViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		89EC03131BCE7FA90029C353 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				89EC03141BCE7FA90029C353 /* DrawerView.swift */,
+				89EC03161BCE81F70029C353 /* DrawerViewCell.swift */,
+				89EC03181BCE85430029C353 /* DrawerViewDelegate.swift */,
+			);
+			path = Drawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EC03171BCE81F70029C353 /* DrawerViewCell.swift in Sources */,
 				89EC02E31BCE7F3C0029C353 /* ViewController.swift in Sources */,
 				89EC02E91BCE7F3C0029C353 /* DrawerViewController.xcdatamodeld in Sources */,
 				89EC02E11BCE7F3C0029C353 /* AppDelegate.swift in Sources */,
+				89EC03191BCE85430029C353 /* DrawerViewDelegate.swift in Sources */,
+				89EC03151BCE7FA90029C353 /* DrawerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
