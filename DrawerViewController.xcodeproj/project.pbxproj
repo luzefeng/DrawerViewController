@@ -18,6 +18,7 @@
 		89EC03151BCE7FA90029C353 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03141BCE7FA90029C353 /* DrawerView.swift */; settings = {ASSET_TAGS = (); }; };
 		89EC03171BCE81F70029C353 /* DrawerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03161BCE81F70029C353 /* DrawerViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		89EC03191BCE85430029C353 /* DrawerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC03181BCE85430029C353 /* DrawerViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		89FD01451BCFD119002894BC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89FD01441BCFD119002894BC /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		89EC03141BCE7FA90029C353 /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		89EC03161BCE81F70029C353 /* DrawerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewCell.swift; sourceTree = "<group>"; };
 		89EC03181BCE85430029C353 /* DrawerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewDelegate.swift; sourceTree = "<group>"; };
+		89FD01441BCFD119002894BC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				89EC02E01BCE7F3C0029C353 /* AppDelegate.swift */,
 				89EC02E21BCE7F3C0029C353 /* ViewController.swift */,
 				89EC02E41BCE7F3C0029C353 /* Main.storyboard */,
+				89FD01441BCFD119002894BC /* 1.jpg */,
 				89EC02EA1BCE7F3C0029C353 /* Assets.xcassets */,
 				89EC02EC1BCE7F3C0029C353 /* LaunchScreen.storyboard */,
 				89EC02EF1BCE7F3C0029C353 /* Info.plist */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89EC02EE1BCE7F3C0029C353 /* LaunchScreen.storyboard in Resources */,
+				89FD01451BCFD119002894BC /* 1.jpg in Resources */,
 				89EC02EB1BCE7F3C0029C353 /* Assets.xcassets in Resources */,
 				89EC02E61BCE7F3C0029C353 /* Main.storyboard in Resources */,
 			);
@@ -505,6 +509,7 @@
 				89EC030A1BCE7F3C0029C353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89EC030B1BCE7F3C0029C353 /* Build configuration list for PBXNativeTarget "DrawerViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				89EC030D1BCE7F3C0029C353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89EC030E1BCE7F3C0029C353 /* Build configuration list for PBXNativeTarget "DrawerViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				89EC03101BCE7F3C0029C353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
