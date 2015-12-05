@@ -52,7 +52,8 @@ class ViewController: UIViewController, DrawerViewDelegate, UINavigationControll
 //        self.navigationController?.navigationBar.backgroundColor = UIColor.redColor()
         self.edgesForExtendedLayout = UIRectEdge.None
         self.automaticallyAdjustsScrollViewInsets = false
-        
+//        addTapGesture()
+        addPanGesture()
     }
     
     func addPanGesture(){
@@ -61,6 +62,23 @@ class ViewController: UIViewController, DrawerViewDelegate, UINavigationControll
         self.contentView?.addGestureRecognizer(panGesture!)
     }
     
+    func panHandler(recognizer: UIPanGestureRecognizer){
+        let translation = recognizer.translationInView(self.contentView!)
+//        let x = (self.contentView?.center.x)! + translation.x
+//        self.contentView?.center.x += translation.x
+        self.contentView?.layer.position.x += translation.x
+        if self.contentView?.center.x < self.view.center.x{
+//            UIView.animateWithDuration(NSTimeInterval(0.3), animations: {
+            self.contentView?.center.x = self.view.center.x
+//            })
+//            self.contentView?.layer.position.x = self.view.layer.position.x
+//            self.contentView?.center.x = self.view.center.x
+        }else if self.contentView?.center.x > self.view.center.x + offsetX!{
+//            UIView.animateWithDuration(NSTimeInterval(0.3), animations: {
+            self.contentView?.center.x = self.view.center.x + offsetX!
+//            })
+        }
+    }
     func addTapGesture(){
         tapGesture = UITapGestureRecognizer(target: self, action: "tapHandler:")
         tapGesture!.delegate = self
